@@ -8,90 +8,198 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
 
-    }
-
-    body {
-      background-color: rgb(36, 36, 36);
-      color: white;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      height: 80px;
-      background-color: rgb(80, 80, 80);
-    }
-
-    nav.left:hover {
-      cursor: pointer;
-    }
-
-    nav ul {
-      display: flex;
-      justify-content: center;
-    }
-
-    nav ul li {
-      list-style: none;
-      margin: 0 23px;
-    }
-
-    nav ul li a {
-      text-decoration: none;
-      color: white;
-    }
-
-    nav ul li a:hover {
-      color: rgb(255, 237, 138);
-    }
-
-    .left {
-      font-size: 2rem;
-      font-weight: bold;
-    }
-
-    .firstSection {
-      display: flex;
-      justify-content: space-around;
-      margin: 23px 0;
-      align-items: center;
-    }
-
-    .firstSection>div {
-      width: 30%
-    }
-
-    .leftSection {
-      font-size: 2.77rem;
-      margin: 80px 0;
-      font-weight: 500;
-    }
-
-    .rightSection img {
-      width: 100%;
-      margin: 50px 0;
-    }
-
-    .name {
-      color: gold;
-      font-size: 2.8rem;
-      font-weight: bold;
-      text-shadow: 0 0 30px gold;
-    }
-
-    #element {
-      color: gold;
-      text-shadow: 0 0 30px gold;
-    }
-  </style>
 </head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(36, 36, 36);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+  }
+
+  /* Navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(80, 80, 80);
+    padding: 0 20px;
+  }
+
+  nav.left:hover {
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: rgb(255, 237, 138);
+  }
+
+  .left {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  /* First Section */
+  .firstSection {
+  display: flex;
+  justify-content: center; /* Centers items horizontally */
+  align-items: center; /* Centers items vertically */
+  gap: 20px; /* Adds some spacing between the text and the image */
+}
+
+  .firstSection>div {
+    width: auto;
+    text-align: center;
+  }
+
+  .leftSection {
+    font-size: 2.5rem;
+    margin: 40px 0;
+    font-weight: 500;
+  }
+
+  .name {
+    color: gold;
+    font-size: 2.8rem;
+    font-weight: bold;
+    text-shadow: 0 0 30px gold;
+  }
+
+  #element {
+    color: gold;
+    text-shadow: 0 0 30px gold;
+  }
+
+  .rightSection img {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 30px rgba(60, 251, 111, 0.5);
+    border-radius: 12px;
+  }
+
+  /* Main HR Styling */
+  main hr {
+    border: 0px;
+    height: 1px;
+    margin: 10px auto;
+    background-color: gold;
+    box-shadow: 0 4px 6px gold;
+    width: 90%;
+  }
+
+  /* Second Section */
+  .secondSection {
+    margin: 20px auto;
+  max-width: 80vw; /* Reduce the margin from default to bring it higher */
+  text-align: center;
+  padding: 20px; /* Optional padding to manage internal spacing */
+}
+
+  .secondSection h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .text-gray {
+    color: gray;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+
+  /* Experience Section */
+  .experience {
+    margin-top: 20px;
+  }
+
+  .job {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+
+  .job-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .job-text {
+    width: 60%;
+    padding: 10px;
+  }
+
+  .job h2 {
+    font-size: 1.5rem;
+    color: gold;
+    margin-bottom: 10px;
+  }
+
+  .job span {
+    font-size: 0.9rem;
+    color: gray;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .job p {
+    line-height: 1.5;
+    color: white;
+  }
+
+  .job-image {
+    width: 35%;
+    text-align: center;
+  }
+
+  .job-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Job Separator */
+  .job:not(:last-child) hr {
+    margin: 20px 0;
+    background-color: gray;
+    height: 1px;
+    border: none;
+    opacity: 0.5;
+    width: 100%;
+  }
+</style>
 
 <body>
   <header>
@@ -120,15 +228,79 @@
       </div>
 
       <div class="rightSection">
-        <img src="images/kri.jpg" alt="Kristal Bidari">
+        <img src="kri.jpg" alt="Kristal Bidari">
       </div>
     </section>
+    <hr>
+    <section class="secondSection">
+      <span class="text-gray">What I have done so far</span>
+      <h1>Work Experience</h1>
+      <div class="experience">
+        <div class="job">
+          <div class="job-content">
+            <div class="job-text">
+              <h2>Freelance Web Developer</h2>
+              <span class="text-gray">Apr 2024 - Present</span>
+              <p>Designed and developed responsive websites for small businesses, integrating modern frameworks and
+                ensuring cross-browser compatibility. Focused on creating user-friendly interfaces and maintaining
+                excellent performance optimization.</p>
+            </div>
+            <div class="job-image">
+              <img src="web-developer.png" alt="Web Development Work">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="job">
+          <div class="job-content">
+            <div class="job-text">
+              <h2>Video Editor</h2>
+              <span class="text-gray">Oct 2023 - Present</span>
+              <p>Edited promotional videos, short documentaries, and personal projects. Worked with Adobe Premiere Pro
+                and After Effects to deliver polished, professional videos with engaging visuals.</p>
+            </div>
+            <div class="job-image">
+              <img src="video-editor.png" alt="Video Editing Work">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="job">
+          <div class="job-content">
+            <div class="job-text">
+              <h2>Graphic Designer</h2>
+              <span class="text-gray">Oct 2023 - Present</span>
+              <p>Created custom logos, social media graphics, and print materials for clients. Utilized tools like
+                Photoshop and Illustrator to deliver high-quality visual assets that matched brand aesthetics.</p>
+            </div>
+            <div class="job-image">
+              <img src="graphic-designer.png" alt="Graphic Design Work">
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="job">
+          <div class="job-content">
+            <div class="job-text">
+              <h2>Photographer</h2>
+              <span class="text-gray">Oct 2023 - Present</span>
+              <p>Specialized in portrait and event photography, capturing moments with precision and creativity. Edited
+                photos with Lightroom to enhance their visual appeal and convey compelling stories.</p>
+            </div>
+            <div class="job-image">
+              <img src="photographer.png" alt="Photography Work">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
   <!-- Setup and start animation! -->
   <script>
     var typed = new Typed('#element', {
-      strings: ['Web Developer', 'Video Editor', 'Photographer'],
+      strings: ['Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer', 'Web Developer', 'Video Editor', 'Photographer', 'Graphic Designer'],
       typeSpeed: 50,
     });
   </script>
